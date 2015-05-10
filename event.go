@@ -21,9 +21,6 @@ func createTriggerPayload(channels []string, event string, data interface{}, soc
 	if err != nil {
 		return nil, err
 	}
-	if len(data2) > 10240 {
-		return nil, errors.New("Data must be smaller than 10kb")
-	}
 
 	return json.Marshal(&eventPayload{
 		Name:     event,
