@@ -2,8 +2,7 @@ package pusher
 
 import (
 	"encoding/json"
-	"errors"
-)
+	)
 
 type eventPayload struct {
 	Name     string   `json:"name"`
